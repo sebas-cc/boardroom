@@ -1,7 +1,7 @@
 body {
-  min-width: 370px;
   margin: 0;
   padding: 0;
+  min-width: 345px;
 }
 
 :root {
@@ -11,7 +11,7 @@ body {
 
   color-scheme: light dark;
   color: #000000;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

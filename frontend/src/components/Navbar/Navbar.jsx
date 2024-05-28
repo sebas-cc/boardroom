@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div id="Navbar">
       <div id="setting_phone">
-        <input type="checkbox" title="checkbox" />
+        <input type="checkbox" title="menu" />
         <span></span>
         <span></span>
         <span></span>

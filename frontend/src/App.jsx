@@ -6,7 +6,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <TeamList />
+      <TeamList name="test1" />
+      <TeamList name="test2" />
     </>
   );
 };

@@ -1,9 +1,7 @@
 #Navbar {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  padding-right: 10px;
-  padding-left: 10px;
+  position: static;
   color: #fff;
   background-color: black;
   width: 100%;
@@ -15,7 +13,7 @@
   display: none;
   position: relative;
   width: 10vw;
-  padding-top: 2rem;
+  padding: 30px 0 10px 10px;
   z-index: 1;
 
   -webkit-user-select: none;
@@ -108,7 +106,10 @@
   justify-content: space-between;
 }
 
-#Navbar > img,
+#Navbar > img {
+  margin: 10px 10px 10px 0;
+}
+
 #settings_desktop > img {
   margin: 10px;
 }

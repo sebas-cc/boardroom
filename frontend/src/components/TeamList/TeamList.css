@@ -1,22 +1,59 @@
 #TeamList {
-    margin: 5vh 10vw 0 10vw; 
+  display: block;
+  margin: 5vh 10vw 0 10vw;
 }
 
 #team_settings {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid grey;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid grey;
+  margin-bottom: 30px;
 }
 
-#team_settings button{
-    background-color: #EEEEEE;
-    color: grey;
-    border: none;
-    font-size:larger;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 5px 20px;
+#team_settings button {
+  background-color: #eeeeee;
+  color: grey;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.memberList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+#options button {
+  margin: 2px;
+}
+
+#options button:last-child {
+  rotate: 180deg;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-30px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    display: grid;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
