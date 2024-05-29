@@ -1,4 +1,3 @@
-import React from "react";
 import "./Navbar.css";
 import imageNotFound from "../../assets/imageNotFound.png";
 import messages from "../../assets/messages.png";

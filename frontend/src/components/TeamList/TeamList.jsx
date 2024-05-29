@@ -8,7 +8,7 @@ const TeamList = (props) => {
   const [isHidden, setIsHidden] = useState(true);
 
   const hideList = () => {
-    const memberList = document.getElementById(props.name);
+    const memberList = document.getElementById(`list_${props.name}`);
     const viewButton = document.getElementById(`view_${props.name}`);
 
     if (isHidden) {
@@ -23,7 +23,7 @@ const TeamList = (props) => {
   };
 
   return (
-    <div id="TeamList">
+    <div className="TeamList" id={props.name}>
       <div id="team_settings">
         <h1>{teamName ? teamName : "No Name"}</h1>
         <div id="options">
@@ -33,7 +33,7 @@ const TeamList = (props) => {
           </button>
         </div>
       </div>
-      <div className="memberList" id={props.name}>
+      <div className="memberList" id={`list_${props.name}`}>
         <MemberCard
           photo={photo}
           name={name}

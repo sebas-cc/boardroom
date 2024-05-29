@@ -1,4 +1,3 @@
-import React from "react";
 import "./MemberCard.css";
 import imageNotFound from "../../assets/imageNotFound.png";
 
