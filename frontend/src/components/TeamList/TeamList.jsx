@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./TeamList.css";
 import MemberCard from "../MemberCard/MemberCard";
+import { Link } from "react-router-dom";
 
 const TeamList = (props) => {
   let teamName;
@@ -27,13 +28,14 @@ const TeamList = (props) => {
       <div id="team_settings">
         <h1>{teamName ? teamName : "No Name"}</h1>
         <div id="options">
-          <button id="settings">...</button>
+          <Link to={`/${teamName}/settings`}><button>...</button></Link>
           <button id={`view_${props.name}`} onClick={hideList}>
             v
           </button>
         </div>
       </div>
       <div className="memberList" id={`list_${props.name}`}>
+        <Link to={`/${name}/dashboard`}>
         <MemberCard
           photo={photo}
           name={name}
@@ -41,6 +43,7 @@ const TeamList = (props) => {
           ongoing={ongoing}
           done={done}
         />
+        </Link>
         <MemberCard
           photo={photo}
           name={name}

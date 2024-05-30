@@ -5,6 +5,7 @@ import "./index.css";
 import HomePage from "./pages/HomePage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import TasksPage from "./pages/TasksPage.jsx";
+import SettingsPage, { submitAction } from "./pages/SettingsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path: "/:member/dashboard",
     element: <TasksPage />,
+  },
+  {
+    path: "/:team/settings",
+    element: <SettingsPage />,
+    action: submitAction,
   },
 ]);
 

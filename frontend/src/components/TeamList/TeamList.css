@@ -28,6 +28,13 @@
   gap: 15px;
 }
 
+
+.memberList > a {
+  color: black;
+  text-decoration: none;
+}
+
+
 #options button {
   margin: 2px;
 }

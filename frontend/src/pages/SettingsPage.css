@@ -1,0 +1,51 @@
+#teamForm {
+    display: grid;
+    grid-template-columns: minmax(233px, 385px) 1fr;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 15%;
+    width: 100%;
+}
+
+#teamForm input {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 3vh;
+}
+
+#teamForm label {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    gap: 20px;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 0 30px 0 30px;
+}
+
+#teamForm > button {
+    padding: 10px;
+    justify-self: center;
+}
+
+#addMember {
+    display: flex;
+    font-size: initial;
+    align-items: center;
+    color: grey;
+}
+
+#addMember button{
+    color: grey;
+    background-color: transparent;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: xx-large;
+}
